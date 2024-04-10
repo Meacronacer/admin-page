@@ -68,7 +68,7 @@ const Item: React.FC<Iitem> = ({ title, to, icon, selected, setSelected}) => {
             icon={icon}
         >
             <Typography>{title}</Typography>
-            <Link to={to} />
+            <Link to={`admin-page${to}`} />
         </MenuItem>
     )
 }
@@ -77,7 +77,7 @@ const Sidebar: React.FC = () => {
     const theme = useTheme()
     const colors = tokens(theme.palette.mode)
     const [isCollapsed, setIsCollapsed] = useState<boolean>(false)
-    const locationNow:string = window.location.href.split('/')[3]
+    const locationNow:string = window.location.href.split('/')[4]
     const [selected, setSelected] = useState<string>((routeTo as any)[locationNow])
 
     return (

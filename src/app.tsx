@@ -27,17 +27,17 @@ const App = () => {
                 <main className="content">
                     <TopBar/>
                     <Routes>
-                        <Route path='/' element={ <Dashboard />} />
-                        <Route path='/team' element={ <Team />} />
-                        <Route path='/contacts' element={ <Contacts />} />
-                        <Route path='/invoices' element={ <Invoices />} />
-                        <Route path='/form' element={ <ProfileForm />} />
-                        <Route path='/bar' element={ <BarChart />} />
-                        <Route path='/pie' element={ <PieChart />} />
-                        <Route path='/line' element={ <LineChart />} />
-                        <Route path='/faq' element={ <Faq />} />
-                        <Route path='/geography' element={ <GeographyChart />} />
-                        <Route path='/calendar' element={ <Calendar />} />
+                        <Route path='admin-page/' element={ <Dashboard />} />
+                        <Route path='admin-page/team' element={ <Team />} />
+                        <Route path='admin-page/contacts' element={ <Contacts />} />
+                        <Route path='admin-page/invoices' element={ <Invoices />} />
+                        <Route path='admin-page/form' element={ <ProfileForm />} />
+                        <Route path='admin-page/bar' element={ <BarChart />} />
+                        <Route path='admin-page/pie' element={ <PieChart />} />
+                        <Route path='admin-page/line' element={ <LineChart />} />
+                        <Route path='admin-page/faq' element={ <Faq />} />
+                        <Route path='admin-page/geography' element={ <GeographyChart />} />
+                        <Route path='admin-page/calendar' element={ <Calendar />} />
                     </Routes>
                 </main>
             </div>
